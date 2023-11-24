@@ -1,0 +1,550 @@
+
+/*Untuk form 1 */
+input[id=yeye]{
+    width: 11.8%;
+    padding: 12px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 100px;
+    left: 163px;
+	}
+
+/*Untuk form 2 */
+input[id=yeye2]{
+    width: 11.8%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 155px;
+    left: 163px;
+	}
+
+
+
+/*Untuk form 4 */
+input[id=yeye4]{
+    width: 21%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 275px;
+    left: 163px;
+	}
+
+/*Untuk form 5 */
+input[id=yeye5]{
+    width: 21%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 335px;
+    left: 163px;
+	}
+
+/*Untuk form 6 */
+input[id=yeye6]{
+    width: 9%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 395px;
+    left: 163px;
+	}
+
+/*Untuk form 7 */
+input[id=yeye7]{
+    width: 21%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 455px;
+    left: 163px;
+	}
+
+/*Untuk form 8 */
+input[id=yeye8]{
+    width: 21%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 515px;
+    left: 163px;
+	}
+
+/*Untuk form 9 */
+select[id=yeye9]{
+    width: 20.8%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 100px;
+    left: 600px;
+	}
+
+/*Untuk form 10 */
+input[id=yeye10]{
+    width: 20.8%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 155px;
+    left: 600px;
+	}
+
+/*Untuk form 12 */
+input[id=yeye12]{
+    width: 11.8%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 275px;
+    left: 600px;
+	}
+
+/*Untuk form 13 */
+input[id=yeye13]{
+    width: 11.8%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 335px;
+    left: 600px;
+	}
+
+/*Untuk form 14 */
+input[id=jumlahspa]{
+    width: 5%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 395px;
+    left: 600px;
+	}
+
+
+
+	
+
+	
+	/*Untuk form 18 */
+input[id=ongkosspa]{
+    width: 11.8%;
+    padding: 12px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 155px;
+    left: 1050px;
+	}
+	
+	/*Untuk form 19 */
+input[id=totalspa]{
+    width: 11.8%;
+    padding: 12px ;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position: absolute;
+	top: 215px;
+    left: 1050px;
+	}
+
+
+/*Radio Button 1 */
+input[id=radio1]{
+
+	position: absolute;
+	top: 234px;
+    left: 600px;
+	}
+
+
+/*Radio Button 2 */
+input[id=radio2]{
+
+	position: absolute;
+	top: 234px;
+    left: 700px;
+	}
+
+/*Radio Button 3 */
+input[id=radio3]{
+
+	position: absolute;
+	top: 234px;
+    left: 800px;
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+/*Untuk tombol Submit */
+button[type=submit] {
+    width: 10%;
+    background-color: #191970;
+    color: white;
+    padding: 14px 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+		position: absolute;
+	top: 600px;
+    left:400px;
+}
+
+/*Untuk tombol BATAL */
+button[type=batal] {
+    width: 10%;
+    background-color: #FF0000;
+    color: white;
+    padding: 14px 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+		position: absolute;
+	top: 600px;
+    left: 650px;
+}
+
+/*Untuk tombol RESET */
+button[type=reset] {
+    width: 6%;
+    background-color: #f21f3f;
+    color: white;
+    padding: 6px 1px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+		position: absolute;
+	top: 270px;
+    left: 1100px;
+}
+
+
+div {
+    border-radius: 5px;
+    background-color: #F0F8FF;
+    padding: 14px 20px;
+	
+	}
+
+/*Untuk label 1 */
+.lab1{
+   
+   	position: absolute;
+	top: 118px;
+    left: 500px;
+
+   }
+/*Untuk label 2 */
+.lab2{
+   
+   	position: absolute;
+	top: 174px;
+    left: 500px;
+
+   }
+/*Untuk label 3 */
+.lab3{
+   
+   	position: absolute;
+	top: 234px;
+    left: 500px;
+
+   }
+
+/*Untuk label 4 */
+.lab4{
+  
+   	position: absolute;
+	top: 293px;
+    left: 500px;
+
+   }
+/*Untuk label 5 */
+.lab5{
+   
+   	position: absolute;
+	top: 352px;
+    left: 500px;
+
+   }
+
+/*Untuk label 6 */
+.lab6{
+   
+   	position: absolute;
+	top: 415px;
+    left: 500px;
+
+   }
+
+/*Untuk label 7 */
+.lab7{
+   
+   	position: absolute;
+	top: 475px;
+    left: 500px;
+
+   }
+
+/*Untuk label 8 */
+.lab8{
+   
+   	position: absolute;
+	top: 535px;
+    left: 500px;
+
+   }	
+	
+/*Untuk label 9 */
+.lab9{
+  
+   	position: absolute;
+	top: 118px;
+    left: 930px;
+
+   }	
+
+/*Untuk label 10 */
+.lab10{
+    
+   	position: absolute;
+	top: 174px;
+    left: 930px;
+
+   }	
+
+/*Untuk label 11 */
+.lab11{
+   
+   	position: absolute;
+	top: 234px;
+    left: 930px;
+
+   }	   
+	
+/*Untuk label 12 */
+.lab12{
+   
+   	position: absolute;
+	top: 118px;
+    left: 30px;
+
+   }	
+   /*Untuk label 13 */
+.lab13{
+   
+   	position: absolute;
+	top: 175px;
+    left: 30px;
+
+   }	
+   
+   /*Untuk label 14 */
+.lab14{
+   
+   	position: absolute;
+	top: 232px;
+    left: 30px;
+
+   }	
+   /*Untuk label 15 */
+.lab15{
+  
+   	position: absolute;
+	top: 290px;
+    left: 30px;
+
+   }	
+   /*Untuk label 16 */
+.lab16{
+ 
+   	position: absolute;
+	top: 354px;
+    left: 30px;
+
+   }	
+   /*Untuk label 17 */
+.lab17{
+   
+   	position: absolute;
+	top: 418px;
+    left: 30px;
+
+   }	
+   /*Untuk label 18 */
+.lab18{
+    
+   	position: absolute;
+	top: 474px;
+    left: 30px;
+
+   }	
+.lab19{
+   
+   	position: absolute;
+	top: 538px;
+    left: 30px;
+
+   }	
+
+   /*Untuk rp1 */
+.rp1{
+  
+   	position: absolute;
+	top: 118px;
+    left: 1020px;
+
+   }	
+   /*Untuk rp2 */
+.rp2{
+  
+   	position: absolute;
+	top: 176px;
+    left: 1020px;
+
+   }	
+   /*Untuk rp3*/
+.rp3{
+  
+   	position: absolute;
+	top: 236px;
+    left: 1020px;
+
+   }	
+.lab_unit{
+  
+   	position: absolute;
+	top: 416px;
+    left: 673px;
+
+   }
+.lab_pak{
+  
+   	position: absolute;
+	top: 418px;
+    left: 297px;
+
+   }   
+
+.spakat{
+  
+   	position: absolute;
+	top: 234px;
+    left: 620px;
+
+   }  
+.ngo{
+  
+   	position: absolute;
+	top: 234px;
+    left: 720px;
+
+   }  
+.batal{
+  
+   	position: absolute;
+	top: 234px;
+    left: 820px;
+
+   }  
+
+
+
+
+   
+h1 {
+    font-size: 2.5em; /* 10px/16=2.5em */
+	font-family: "Lucida Console"
+	}
+   
+.vl {
+    border-left: 6px dodger blue;
+    height: 460px;
+	position: absolute;
+	top: 100px;
+    left: 482px;
+
+	}
+   
+ 
+.v2 {
+    border-left: 6px dodger blue;
+    height: 168px;
+	position: absolute;
+	top: 100px;
+    left: 913px;
+
+	}
+
+
+
+
+
+ 

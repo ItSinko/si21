@@ -1,0 +1,150 @@
+
+<!doctype html>
+<html>
+<head>
+
+<title>LAP ORDER (SPB)</title>
+
+  
+    <link rel="stylesheet" href="bootstrap.min.css">
+  <!-- Optional theme -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" >
+
+<style>
+  body{ zoom:80%;}
+  
+  
+  
+	
+	th.align-middle{
+	height:90px;	
+	}
+	
+	
+	th{
+	text-align:center;	
+	}
+
+	th.align-text-top{
+	text-align: left;	
+	}
+	
+	td{
+	text-align: center;
+		
+	}
+	td.left{
+	text-align: left;
+		
+	}
+</style>
+  </head>
+
+<body>
+
+
+
+
+
+ <h5>Laporan Order SPB</h5>
+
+<button class="btn btn-primary" id="action"  style="position: absolute; left:1.5%;">Grup Cell</button>
+ 
+ <a target="_blank" href="lospb/export_excel.php" class="btn btn-success" style="position: absolute; left:10.5%;" title="Eksport Daa ke Excel" > Export Data</a>
+
+
+ <br/><br>
+
+ 
+   <div class="table-multi-columns table-fill">
+<table id="example" class="table table-small-font table-bordered table-striped"   border="1px">
+  
+  
+  <tr>
+		  <th rowspan="4" style="width:  1.33%; "  class="align-middle" >NO</th>
+          <th colspan="3" style="width:  15.33%;   font-size:20px;"  class="align-middle" >PT SINKO PRIMA ALLOY</th>
+          <th colspan="3" style="width:  22.33%; font-size:30px;" class="align-middle">LAPORAN ORDER</th>
+          <th colspan="2" style="width:  5.33%"  class="align-text-top">Bulan :</th>
+          <th colspan="3"  class="align-text-top"> Staff Penjualan :</th>
+          <th colspan="2"    class="align-text-top">Office Manager :</th>  
+          </tr>
+       
+		  <tr>
+          <th rowspan="3" class="align-middle">TGL ORDER</th>
+          <th rowspan="3"class="align-middle" >NAMA PELANGGAN</th>
+          <th  colspan="6">ORDER</th>
+          <th  colspan="3" style="width:  10.33%">PENGIRIMAN</th>
+          <th rowspan="3" colspan="2" style="width:  5.33%" class="align-middle">KETERANGAN</th>
+		  
+		  <tr>
+          <th  colspan="3">ORDER VIA</th>
+          <th rowspan="2"  style="width:  8.33%" class="align-middle">NAMA / TYPE BARANG</th>
+          <th rowspan="2" class="align-middle">JUMLAH</th>
+          <th rowspan="2" class="align-middle">TGL HARUS DIKIRIM</th> 
+		  <th rowspan="2" class="align-middle">NO SURAT JALAN</th>
+		  <th rowspan="2" class="align-middle">TGL SURAT JALAN</th>
+ 		  <th rowspan="2"style="width:  3.33%" class="align-middle">RETUR</th>
+          </tr>
+			
+    	  <tr>
+          
+		  <th style="width:  4.33%">NO PO</th>
+          <th style="width:  4.33%">TELEPON</th>
+          <th style="width:  4.33%">SMS / WA</th>         
+          
+		  </tr>		
+  
+  <?php
+  //$con=mysqli_connect("localhost","root","","kontrol_db");
+$a= 1;
+$result=mysqli_query($con,"SELECT * ,harga_spb * jumlah_spb as total FROM spb 
+											 LEFT JOIN  admjual_spb ON admjual_spb.noadm_spb=spb.nospb
+											 LEFT JOIN  qc_spb ON admjual_spb.noadm_spb = qc_spb.noqc_spb
+											 LEFT JOIN gudang_spb ON qc_spb.noqc_spb = gudang_spb.nogdg_spb
+											 INNER JOIN produk_master ON produk_master.id_prod = spb.idprod_spb											 
+											 LEFT JOIN  seri_spb ON gudang_spb.nogdg_spb = seri_spb.nogdgfk											 
+											 LEFT JOIN  ekspedisi_spb ON seri_spb.nogdgfk = ekspedisi_spb.noeks_spb 
+											 LEFT JOIN ekspedisi2_spb ON ekspedisi2_spb.noeksfk_spb = spb.nospb
+											 LEFT JOIN jasaeks ON jasaeks.id_eks = ekspedisi2_spb.jasafk_spb
+											 GROUP BY noseri_spb
+											
+				 ");		
+				 
+				 $a= 1;
+		 while($row = mysqli_fetch_array($result)){
+        echo'<tr >
+
+	      <td >'. $a++ .'</td>
+		  <td >'. $row["tglsjgdg_spb"].'</td>     
+    	  <td>'. $row["pelanggan_spb"].'</td>
+          <td>'. $row["nopo_spb"].'</td>
+		  <td>-</td>
+          <td>-</td>
+          <td class=left>'. $row["nam_prod"].'</td>
+          <td>'. $row["jumlah_spb"].'</td>
+          <td>'. $row["tglsjgdg_spb"].'</td>
+          <td>'. $row["nosjgdg_spb"].'</td>
+          <td>'. $row["tglsjgdg_spb"].'</td>
+		  <td>-</td>		  
+		  <td>'. $row["noseri_spb"].'</td>
+          <td>-</td>			  
+		
+  </tr>';
+  
+		 }
+  ?>
+</table>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script src="jquery.rowspanizer.js"></script>
+<script>
+$('#action').on('click', function() {
+  $("#example").rowspanizer({vertical_align: 'top'});
+});
+</script>
+
+
+
+</body>
+</html>
